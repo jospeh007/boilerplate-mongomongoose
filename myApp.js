@@ -17,12 +17,9 @@ favoriteFoods : [{type : String}]
 let PersonModel = mongoose.modal('Person',personSchema)
 
 PersonModel.create({
-  name : Ahmed,
+  name : 'Ahmed',
   age : 30,
   favoriteFoods : ['Melons', 'Banana']
-})
-
-
 })
 
 
