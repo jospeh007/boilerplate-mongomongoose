@@ -1,4 +1,29 @@
+const { Mongoose, Schema } = require('mongoose');
+
 require('dotenv').config();
+
+
+const personSchema = mongoose.Schema({
+
+name : {
+  type : String,
+  isRequired : true
+},
+
+age : Number,
+favoriteFoods : [{type : String}]
+})
+
+let PersonModel = mongoose.modal('Person',personSchema)
+
+PersonModel.create({
+  name : Ahmed,
+  age : 30,
+  favoriteFoods : ['Melons', 'Banana']
+})
+
+
+})
 
 
 let Person;
